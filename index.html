@@ -2,84 +2,186 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Captain Code's Personal Site</title>
-    <link rel="stylesheet" href="css\styles.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+      integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc="
+      crossorigin="anonymous"
+    />
+    <title>Shash_Curiosity</title>
   </head>
- 
   <body>
-    <img src="images/hanuman.jpg" alt="Profile Photo">
-    <h1>Shashank Kumar (Captain CODE)</h1>
-    <p class="f1" id="f1">Founder of <em><strong> Code Army</em></strong></p>
-    <p class="f1">Adios Everyone,Welcome to My Personal Site</p>
-    <hr>
-    <h3>About the Site</h3>
-    <ul>
-      <li>Introduction</li>
-      <p>This Website was developed to apply the knowlegde learnt in Web Development course taught by Angela Yu. This 
-        is my first website, and I am excited to create it. I shall ensure that this will turn out to a great website.
-      </p>
-      <li>About My Life</li>
-      <p>Born on 1st July 2002. I hail from a defence Background. My Father is a Navy personnel. My Mother is a house maker. I have a younger brother
-        who is currently studying in 12th.. I have visited and stayed at many different locations throughout the course of my childhood. The places 
-      I stayed over were Port Blair, Ramnad, Mumbai, Karwar and Kochi. Kochi being the closest one to my heart, as I did my 12th grduation from there.
-      </p>
-      <li>Achievements</li>
-      <br>
-      <ol>
-        <li>CCA</li>
-        <ul>
-          <li>Hindi Creative Writing (Regional 1st)</li>  
-          <li>Hindi Elocution</li>
+    <header>
+      <div class="logo">
+        <img src="img/devjane.png" alt="" />
+      </div>
+      <button class="nav-toggle" aria-label="toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">My Services</a>
+          </li>
+          <li class="nav__item"><a href="#" class="nav__link">About Me</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">My Work</a></li>
         </ul>
-        <br>
-        <li>Sports</li>
-        <ul>
-          <li>Volleyball U-17(Clusters 1st)</li>
-          <li>Volleyball U-19(Regional 1st)</li>
-          <li>Cricket U-17(Clusters 1st)</li>
-        </ul>
-        <br>
-        <li>Leadership Roles</li>
-        <ul>
-          <li>House Discipline Captain(Class 10th)</li>
-          <li>School Vice-Captain(Class 11th)</li>
-          <li>School Captain(Class 12th)</li>
-        </ul>
-      </ol>
-    </ul>
-    <a href="hobbies.html">My Hobbies</a>
-    
-    <h3>My School Life</h3>
-    <a href="education.html">More about My Education</a>
-    <hr>
+      </nav>
+    </header>
 
-    <h3>My Skills</h3>
-    <table>
-      <tr>
-        <td>Web Development </td>
-        <td>*****</td>
-      </tr>
-      <tr>
-        <td>Volleyball</td>
-        <td>*****</td>
-      </tr>
-      <tr>
-        <td>Drawing</td>
-        <td>*****</td>
-      </tr>
-    </table>
-    
+    <!-- Introduction -->
+    <section class="intro" id="home">
+      <h1 class="section__title section__title--intro">
+        Hi, I am <strong>Shashank Kumar</strong>
+      </h1>
+      <p class="section__subtitle section__subtitle--intro"></p>
+      <img src="img/dev-jane-01.jpg" alt="a picture of Jane Smith smiling" />
+    </section>
 
-    <h3>Follow My Socials</h3>
-    <ol>
-      <li><a href="https://www.instagram.com/">Instagram </a></li>
-      <li><a href="https://twitter.com/i/flow/login">Twitter</a></li>
-      <li><a href="https://www.facebook.com/">Facebook</a></li>
-    </ol>
-    <hr>
-   
-    <h3>Contact Info</h3>
-    <a href="contact.html">Contact Me</a>
+    <!-- My Services -->
+    <section class="my-services" id="services">
+      <h2 class="section__title section__title--services">What I do</h2>
+      <div class="services">
+        <div class="service">
+          <h3>Frontend Development</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </p>
+        </div>
+
+        <!-- / service -->
+
+        <div class="service">
+          <h3>Content Writing</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </p>
+        </div>
+
+        <!-- / service -->
+
+        <div class="service">
+          <h3>Life Mentoring</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </p>
+        </div>
+
+        <!-- / service -->
+      </div>
+      <!-- / services -->
+
+      <a href="#work" class="btn">My Work</a>
+    </section>
+
+    <!-- About Me -->
+    <section class="about-me" id="about">
+      <h2 class="section__title section__title--about">Who I am</h2>
+      <p class="section__subtitle section__subtitle--about"></p>
+
+      <div class="about-me__body">
+        <p></p>
+        <p></p>
+      </div>
+
+      <img src="img/dev-jane-02.jpg" alt="Jane leaning against a bus" />
+    </section>
+
+    <!-- My Work -->
+    <section class="my--work" id="work">
+      <h2 class="section__title">My Work</h2>
+      <p class="section__subtitle"></p>
+
+      <div class="portfolio">
+        <!-- Portfolio item 01 -->
+        <a href="#" class="portfolio__item">
+          <img src="img/portfolio-01.jpg" alt="" class="portfolio__img" />
+        </a>
+
+        <!-- Portfolio item 02 -->
+        <a href="#" class="portfolio__item">
+          <img src="img/portfolio-02.jpg" alt="" class="portfolio__img" />
+        </a>
+
+        <!-- Portfolio item 03 -->
+        <a href="#" class="portfolio__item">
+          <img src="img/portfolio-03.jpg" alt="" class="portfolio__img" />
+        </a>
+
+        <!-- Portfolio item 04 -->
+        <a href="#" class="portfolio__item">
+          <img src="img/portfolio-04.jpg" alt="" class="portfolio__img" />
+        </a>
+
+        <!-- Portfolio item 05 -->
+        <a href="#" class="portfolio__item">
+          <img src="img/portfolio-05.jpg" alt="" class="portfolio__img" />
+        </a>
+
+        <!-- Portfolio item 06 -->
+        <a href="#" class="portfolio__item">
+          <img src="img/portfolio-06.jpg" alt="" class="portfolio__img" />
+        </a>
+
+        <!-- Portfolio item 07 -->
+        <a href="#" class="portfolio__item">
+          <img src="img/portfolio-07.jpg" alt="" class="portfolio__img" />
+        </a>
+
+        <!-- Portfolio item 08 -->
+        <a href="#" class="portfolio__item">
+          <img src="img/portfolio-08.jpg" alt="" class="portfolio__img" />
+        </a>
+
+        <!-- Portfolio item 09 -->
+        <a href="#" class="portfolio__item">
+          <img src="img/portfolio-09.jpg" alt="" class="portfolio__img" />
+        </a>
+
+        <!-- Portfolio item 10 -->
+        <a href="#" class="portfolio__item">
+          <img src="img/portfolio-10.jpg" alt="" class="portfolio__img" />
+        </a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <!-- replace with your own email address -->
+      <a href="mailto:callshash@gmail.com" class="footer__link"
+        >hello@jane.dev</a
+      >
+      <ul class="social-list">
+        <li class="social-list__item">
+          <a class="social-list__link" href="https://codepen.io">a</a>
+        </li>
+        <li class="social-list__item">
+          b<a class="social-list__link" href="http://dribbble.com"></a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link" href="https://twitter.com">c</a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link" href="https://github.com">d</a>
+        </li>
+      </ul>
+    </footer>
   </body>
 </html>
- 
