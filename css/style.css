@@ -7,13 +7,15 @@
 /* Custom Properties */
 
 :root{
-    --ff-primary: 'Source Sans Pro', sans-serif;
-    --ff-secondary: 'Source Code Pro', monospace;
+    --ff-primary: 'Poppins', sans-serif;
+    --ff-secondary: 'Poppins', monospace;
     
     --fw-reg: 300;
-    --fw-bold: 900;
+    --fw-med: 400;
+    --fw-bold: 600;
     
     --clr-light: #fff;
+    --clr-semi-light: rgb(243, 242, 242);
     --clr-dark: #303030;
     --clr-accent: #16e0bd;
     
@@ -21,6 +23,16 @@
     --fs-h2: 2.25rem;
     --fs-h3: 1.25rem;
     --fs-body: 1rem;
+
+    /* .25rem = 4px, .5rem = 8px, .75rem = 12px ... */
+    --mb-0-25: .25rem;
+    --mb-0-5: .5rem;
+    --mb-0-75: .75rem;
+    --mb-1: 1rem;
+    --mb-1-5: 1.5rem;
+    --mb-2: 2rem;
+    --mb-2-5: 2.5rem;
+    --mb-3: 3rem;
 
     --bs: 0.25em 0.25em 0.75em rgba(0,0,0,.25),
           0.125em 0.125em 0.25em rgba(0,0,0,.15);
@@ -369,9 +381,13 @@ header{
 
 /* My Skills */
 
-/*==================== SKILLS ====================*/
+.my-skills {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
 .skills__container{
-    row-gap: 0;
+    row-gap: 0.5;
   }
   
   .skills__header{
@@ -381,29 +397,20 @@ header{
     cursor: pointer;
   }
   
-  .skills__icon, 
-  .skills__arrow{
+  .skills__icon
+  {
     font-size: 2rem;
-    color: var(--clr-light);
+    color: var(--clr-accent);
   }
   
   .skills__icon{
     margin-right: var(--mb-0-75);
+    margin-top: var(--mb-0-75);
   }
   
   .skills__title{
     font-size: var(--fs-h3);
-  }
-  
-  .skills__subtitle{
-    font-size: var(--fs-h3);
-    color: var(--clr-accent);
-  ;
-  }
-  
-  .skills__arrow{
-    margin-left: auto;
-    transition: 0.4s;
+    margin-top: var(--mb-2);
   }
   
   .skills__list{
@@ -417,8 +424,8 @@ header{
   }
   
   .skills__name{
-    font-size: var(--normal-font-size);
-    font-weight: var(--font-medium);
+    font-size: var(--fs-body);
+    font-weight: var(--fw-med);
   }
   
   .skills__bar,
@@ -428,7 +435,7 @@ header{
   }
   
   .skills__bar{
-    background-color: var(--clr-light);
+    background-color: var(--clr-semi-light);
   }
   
   .skills__percentage{
@@ -437,16 +444,24 @@ header{
   }
   
   .skills__html{
-    width: 70%;
+    width: 85%;
   }
   .skills__css{
-    width: 45%;
+    width: 70%;
   }
   .skills__js{
-    width: 40%;
+    width: 60%;
   }
   .skills__tailwind{
-    width: 50%;
+    width: 60%;
+  }
+  
+  .skills__react{
+    width: 20%;
+  }
+  
+  .skills__mysql{
+    width: 80%;
   }
   .skills__mongo{
     width: 40%;
@@ -458,20 +473,7 @@ header{
   .skills__medium{
     width: 30%;
   }
-  
-  .skills__close .skills__list{
-    height: 0;
-    overflow: hidden;
-  }
-  
-  .skills__open .skills__list{
-    height: max-content;
-    margin-bottom: var(--mb-2-5);
-  }
-  
-  .skills__open .skills__arrow{
-    transform: rotate(-180deg);
-  }
+
 
 /* My Work */
 
