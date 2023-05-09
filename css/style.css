@@ -507,23 +507,6 @@ header{
     font-size: 2rem;
 }
 
-.tech_icon{
-    height: 100px;
-    width: 100px;
-    border-radius: 100%;
-    cursor: pointer;
-    transform: scale(1);
-    transition: all 0.3s;
-}
-
-.tech_icon:hover{
-    box-shadow: 0px 0px 10px 1px #26262680;
-    background: linear-gradient(90deg, var(--clr-accent), var(--clr-dark));
-    transform: scale(1.1);
-    transition: all 0.3s;
-    color: var(--clr-light);
-}
-
 @media (max-width: 728px) {
     .tech_icons {
         width: 100%;
@@ -538,6 +521,20 @@ header{
     align-items: center;
     justify-content: space-between;
     text-align: center;
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+    cursor: pointer;
+    transform: scale(1);
+    transition: all 0.3s;
+}
+
+.tech_icon:hover{
+    box-shadow: 0px 0px 10px 1px #26262680;
+    background: linear-gradient(90deg, var(--clr-accent), var(--clr-dark));
+    transform: scale(1.1);
+    transition: all 0.3s;
+    color: var(--clr-light);
 }
 
 .tech_icon i {
