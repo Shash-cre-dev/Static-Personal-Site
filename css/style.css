@@ -529,6 +529,14 @@ header{
     transition: all 0.3s;
 }
 
+.tech_icon:hover{
+    box-shadow: 0px 0px 10px 1px #26262680;
+    background: linear-gradient(90deg, var(--clr-accent), var(--clr-dark));
+    transform: scale(1.1);
+    transition: all 0.3s;
+    color: var(--clr-light);
+}
+
 .tech_icon i {
     font-size: var(--fs-h2);
     /* padding-bottom: .25em; */
@@ -540,15 +548,6 @@ header{
 }
 
 @media (max-width: 728px) {
-
-    .tech_icon:hover{
-        box-shadow: 0px 0px 10px 1px #26262680;
-        background: linear-gradient(90deg, var(--clr-accent), var(--clr-dark));
-        transform: scale(1.1);
-        transition: all 0.3s;
-        color: var(--clr-light);
-    }
-    
     .tech_icon i {
       font-size: 2rem;
     }
@@ -563,8 +562,6 @@ header{
     .tech_icon p {
       font-size: 0.8rem;
     }
-
-
   }
 
 /* My Blogs */
