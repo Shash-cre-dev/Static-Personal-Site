@@ -84,12 +84,12 @@ strong { font-weight: var(--fw-bold) }
 
 .btn {
     display: inline-block;
-    padding: .5em 2.5em;
+    padding: 0.85em 2.5em;
     background: var(--clr-accent);
     color: var(--clr-dark);
     text-decoration: none;
     cursor: pointer;
-    font-size: .8rem;
+    font-size: 0.9rem;
     text-transform: uppercase;
     letter-spacing: 2px;
     font-weight: var(--fw-bold);
@@ -325,6 +325,10 @@ header{
     margin: 0 auto;
 }
 
+.resume-btn{
+    margin-top: var(--mb-2);
+}
+
 @media (min-width: 800px) {
     .services {
         display: flex;
@@ -503,6 +507,23 @@ header{
     font-size: 2rem;
 }
 
+.tech_icon{
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+    cursor: pointer;
+    transform: scale(1);
+    transition: all 0.3s;
+}
+
+.tech_icon:hover{
+    box-shadow: 0px 0px 10px 1px #26262680;
+    background: linear-gradient(90deg, var(--clr-accent), var(--clr-dark));
+    transform: scale(1.1);
+    transition: all 0.3s;
+    color: var(--clr-light);
+}
+
 @media (max-width: 728px) {
     .tech_icons {
         width: 100%;
@@ -570,7 +591,7 @@ header{
   .card {
     position: relative;
     display: block;
-    height: 310px;  
+    height: 19.375rem; /* 310px*/ 
     border-radius: calc(var(--curve) * 1px);
     overflow: hidden;
     text-decoration: none;
@@ -578,7 +599,7 @@ header{
   
   .card__image {      
     width: 100%;
-    height: 235px;
+    height:  14.688rem /* 235px*/
   }
   
   .card__overlay {
