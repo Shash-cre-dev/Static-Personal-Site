@@ -163,13 +163,13 @@ h3 { font-size: var(--fs-h3) }
 #header {
     position: fixed;
     top: 50%;
-  margin-top:-50px;
+    margin-top:-50px;
     height: 100px;
     width: 100px;
-  left:50%;
-  margin-left:-50px;
+    left:50%;
+    margin-left:-50px;
     background-color:white;
-  border-radius:50%;
+    border-radius:50%;
 }
   
   #header2 {
@@ -178,10 +178,9 @@ h3 { font-size: var(--fs-h3) }
     margin-top:-50px;
     height: 100px;
     width: 100px;
-  left:50%;
+    left:50%;
     margin-left:-50px;
     background-color: #333;
-    -webkit-transform: rotate(45deg);
     border-radius:50%;
   } 
 #header3 {
@@ -198,14 +197,14 @@ h3 { font-size: var(--fs-h3) }
 
 #circle1 {
    position: fixed;
-    top: 50%;
-  margin-top:-50px;
-    height: 100px;
-    width: 100px;
-  left:50%;
-  margin-left:-50px;
-    background-color:white;
-  border-radius:50%;
+   top: 50%;
+   margin-top:-50px;
+   height: 100px;
+   width: 100px;
+   left:50%;
+   margin-left:-50px;
+   background-color:white;
+   border-radius:50%;
 }
 
 /* Header */
@@ -764,6 +763,17 @@ header{
     flex-direction: column;
     align-items: center;
    justify-content: center;
+}
+
+.fun-img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 80px;
+    transition: 0.7s;
+    color: #fff;
+    width:50%;
 }
 
 .wrapper {

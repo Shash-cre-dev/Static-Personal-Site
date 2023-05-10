@@ -1,7 +1,4 @@
-setTimeout(function(){
-    $('.loader-wrapper').fadeToggle();
-}, 5000)
-
+//Navbar 
 const navToggle = document.querySelector('.nav-toggle');
 const navLinks = document.querySelectorAll('.nav__link');
 
@@ -15,6 +12,8 @@ navLinks.forEach(link => {
         document.body.classList.remove('nav-open');
     })
 });
+
+//Loader Jqueries
 
 TweenMax.set($("#header2"), { scale: 0.7 });
 TweenMax.set($("#header3"), { scale: 0.8 });
@@ -38,3 +37,8 @@ TweenMax.to($(".petit"), 5, { color: "rgba(3,255,129,1)", yoyo: true, repeat: -1
 TweenMax.to($(".desinks"), 1, { delay: 7, x: 0, ease: Back.easeOut.config(0.7) });
 TweenMax.to($(".petit"), 1, { delay: 7.5, x: 0, ease: Back.easeOut.config(0.7) });
 
+
+// For Loader
+setTimeout(function () {
+    $('.loader-wrapper').fadeToggle();
+}, 5000)
