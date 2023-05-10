@@ -1,5 +1,3 @@
-
-
 TweenMax.set($("#header2"), { scale: 0.7 });
 TweenMax.set($("#header3"), { scale: 0.8 });
 TweenMax.set($("#header"), { backgroundColor: "rgba(255,255,255,1)" });
