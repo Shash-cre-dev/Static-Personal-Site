@@ -62,6 +62,7 @@ body{
     margin: 0;
     font-family: var(--ff-primary);
     line-height: 1.6;
+    cursor: none;
 }
 
 img{
@@ -78,6 +79,34 @@ strong { font-weight: var(--fw-bold) }
 :focus {
     outline: 3px solid var(--clr-accent);
     outline-offset: 3px;
+}
+
+/* Cursor */
+body:hover #custom-cursor {
+    opacity: 1;
+}
+#custom-cursor {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: var(--clr-dark);
+    position: fixed;
+    top: 0;
+    opacity: 0;
+    pointer-events: none;
+    transition: transform 500ms;
+    z-index: 9999;
+}
+
+#custom-cursor::after {
+    content: "";
+    border-radius: 50%;
+    position: absolute;
+    top: -22px;
+    left: -22px;
+    border: 3px solid var(--clr-accent);
+    width: 50px;
+    height: 50px;
 }
 
 /* Buttons */
