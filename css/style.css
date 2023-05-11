@@ -117,7 +117,7 @@ body:hover #custom-cursor {
     background: var(--clr-accent);
     color: var(--clr-dark);
     text-decoration: none;
-    cursor: pointer;
+    cursor: none;
     font-size: 0.9rem;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -288,7 +288,7 @@ header{
     padding: 0.5em;
     background: transparent;
     border: 0;
-    cursor: pointer;
+    cursor: none;
     position: absolute;
     right: 1em;
     top: 1em;
@@ -493,7 +493,7 @@ header{
     display: flex;
     align-items: center;
     margin-bottom: var(--mb-2-5);
-    cursor: pointer;
+    cursor: none;
   }
   
   .skills__icon
@@ -616,7 +616,7 @@ header{
     height: 100px;
     width: 100px;
     border-radius: 100%;
-    cursor: pointer;
+    cursor: none;
     transform: scale(1);
     transition: all 0.3s;
 }
@@ -684,6 +684,7 @@ header{
     border-radius: calc(var(--curve) * 1px);
     overflow: hidden;
     text-decoration: none;
+    cursor: none;
   }
   
   .card__image {      
@@ -754,6 +755,7 @@ header{
     background-color: var(--clr-dark);
     color: var(--clr-light);
     text-align: center;    
+   
 }
 
 .portfolio {
@@ -766,6 +768,7 @@ header{
 .portfolio__item {
     background: var(--clr-accent);
     overflow: hidden;
+    cursor: none;
 }
 
 .portfolio__img {
