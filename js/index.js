@@ -54,3 +54,23 @@ TweenMax.to($(".petit"), 1, { delay: 7.5, x: 0, ease: Back.easeOut.config(0.7) }
 setTimeout(function () {
     $('.loader-wrapper').fadeToggle();
 }, 5000)
+
+
+// For Work
+let mixerPortfolio = mixitup('.work__container', {
+  selectors: {
+      target: '.work__card'
+  },
+  animation: {
+      duration: 300
+  }
+});
+
+const linkWork = document.querySelectorAll('.work__item')
+
+function activeWork(){
+  linkWork.forEach(L=> L.classList.remove('active-work'))
+  this.classList.add('active-work')
+}
+
+linkWork.forEach(L=> L.addEventListener('click', activeWork))
