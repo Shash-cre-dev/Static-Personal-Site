@@ -1042,19 +1042,42 @@ header{
 }
 
 /* Footer */
-
 .footer {
     background: #111;
     color: var(--clr-accent);
-    text-align: center;
     padding: 2.5em 0;
     font-size: var(--fs-h3);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+.line-1{
+    color: var(--clr-accent);
+    margin-bottom: var(--mb-2-5);
+    font-weight: var(--fw-med);
+}
+
+.line-2{
+    color: var(--clr-light);
+    width: 900px;
+    margin: auto;
+    margin-bottom: var(--mb-3);
+    line-height: 1.2cm;
 
 }
 
+.footer-btn{
+    margin-bottom: var(--mb-2-5);
+}
+
 .footer a { 
-    color: inherit;
     text-decoration: none;
+}
+
+.send-icon{
+    font-size: 1.2rem;
 }
 
 .footer__link {
@@ -1084,19 +1107,5 @@ header{
 
 .social-list__link {
     padding: 0.5em;
-}
-
-
-/* Individual Portfolio Item Styles */
-
-.portfolio-item-individual {
-    padding: 0 2em 2em;
-    max-width: 1000px;
-    margin: 0 auto;
-}
-
-.portfolio-item-individual p {
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
+    color: inherit;
 }
