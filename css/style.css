@@ -237,6 +237,27 @@ h3 { font-size: var(--fs-h3) }
    border-radius:50%;
 }
 
+/* Scroll bar */
+
+body{
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 1.2vh;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--clr-accent);
+}
+  
+::-webkit-scrollbar-track {
+    background: rgba(228, 227, 227, 0);
+}
+  
+
+  
+
 /* Header */
 
 header{
