@@ -53,7 +53,7 @@ TweenMax.to($(".petit"), 1, { delay: 7.5, x: 0, ease: Back.easeOut.config(0.7) }
 // For Loader
 setTimeout(function () {
     $('.loader-wrapper').fadeToggle();
-}, 5000)
+}, 6000)
 
 
 // For Work

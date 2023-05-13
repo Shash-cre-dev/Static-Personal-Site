@@ -1055,21 +1055,24 @@ header{
 
 .line-1{
     color: var(--clr-accent);
-    margin-bottom: var(--mb-2-5);
-    font-weight: var(--fw-med);
+    margin-bottom: var(--mb-0-75);
+    font-weight: var(--fw-med);   
 }
 
 .line-2{
     color: var(--clr-light);
     width: 900px;
     margin: auto;
-    margin-bottom: var(--mb-3);
+    margin-bottom: var(--mb-2-5);
     line-height: 1.2cm;
-
 }
 
 .footer-btn{
     margin-bottom: var(--mb-2-5);
+}
+
+.foot-btn{
+    background: var(--clr-accent);
 }
 
 .footer a { 
@@ -1093,19 +1096,55 @@ header{
     text-decoration: underline;
 }
 
-.social-list {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    margin: 2em 0 0;
-    padding: 0;
+.linkedin,
+.twitter,
+.codepen,
+.dribbble,
+.github,
+.hashnode,
+.medium,
+.instagram,
+.youtube,
+.facebook {
+  color: var(--clr-light);
+  font-size: 27px;
+  margin: 20px;
 }
 
-.social-list__item {
-    margin: 0 0.5em;
+.socialbtns ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap:20px;
 }
 
-.social-list__link {
-    padding: 0.5em;
-    color: inherit;
+.socialbtns ul li {
+  border: 1px solid var(--clr-white);
+  margin: 10px;
+  border-radius: 50px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
+.socialbtns a {
+  text-decoration: none;
+}
+
+.socialbtns ul li:hover {
+  color: var(--White);
+  border: none;
+  background: linear-gradient(90deg, var(--clr-accent), var(--clr-dark));
+  transition: all 0.5s ease;
+}
+
+.credit {
+    color: rgb(201, 201, 201);
+    font-weight: 400;
+    letter-spacing: 1px;
+    font-size: 12px;
+  }

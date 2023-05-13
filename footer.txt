@@ -196,3 +196,84 @@
 
 
 
+//Footer ICONS
+<ul class="social-list">
+
+        <li class="social-list__item">
+          <div class="footer_icon"><a class="social-list__link" href="https://codepen.io">
+            <i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </li>
+
+        <li class="social-list__item">
+          <div class="footer_icon"><a class="social-list__link" href="https://codepen.io">
+            <i class="fab fa-codepen"></i></a>
+          </div>
+        </li>
+
+        <li class="social-list__item">
+          <div class="footer_icon"><a class="social-list__link" href="http://dribbble.com">
+            <i class="fab fa-dribbble"></i></a>
+          </div>
+        </li>
+
+        <li class="social-list__item">
+          <div class="footer_icon"><a class="social-list__link" href="https://twitter.com">
+            <i class="fab fa-twitter"></i></a>
+          </div>
+        </li>
+
+        <li class="social-list__item">
+          <div class="footer_icon"><a class="social-list__link" href="https://github.com">
+            <i class="fab fa-github"></i>
+          </a>
+          </div>
+        </li>
+</ul>
+
+.social-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 2em 0 0;
+    padding: 0;   
+}
+
+.social-list__item {
+    margin: 0 0.5em;
+    
+}
+
+.social-list__link {
+    padding: 0.5em;
+    color: inherit;
+    cursor: none;
+}
+
+
+.footer_icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+    cursor: none;
+    transform: scale(1.2);
+    transition: all 0.3s;
+}
+
+.footer_icon:hover{
+    box-shadow: 0px 0px 10px 1px #26262680;
+    background: linear-gradient(90deg, var(--clr-accent), var(--clr-dark));
+    transform: scale(1.4);
+    transition: all 0.3s;
+    color: var(--clr-light);
+}
+
+.footer_icon i {
+    font-size: var(--fs-h3);
+    /* padding-bottom: .25em; */
+}
