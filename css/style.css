@@ -197,8 +197,8 @@ h3 { font-size: var(--fs-h3) }
     width: 100px;
     left:50%;
     margin-left:-50px;
-    background-color:white;
-    border-radius:50%;
+    background-color:var(--clr-light);
+    border-radius:60%;
 }
   
 #header2 {
@@ -222,10 +222,10 @@ h3 { font-size: var(--fs-h3) }
    left:50%;
    margin-left:-50px;
    background-color:#333;
-   border-radius:30%;
+   border-radius:20%;
 }
 
-#circle1 {
+#cercle1 {
    position: fixed;
    top: 50%;
    margin-top:-50px;
@@ -267,7 +267,7 @@ header{
 }
 
 .logo {
-    max-width: 100px;
+    max-width: 200px;
 }
 
 .nav{
