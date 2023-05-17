@@ -367,9 +367,11 @@ header{
 
 /* Intro Section */
 
-.intro__img{
-    box-shadow: var(--bs);
+.intro__img lottie-player {
+        width: 400px !important;
+        height: 400px !important;
 }
+
 
 .section__subtitle--intro {
     display: inline-block;

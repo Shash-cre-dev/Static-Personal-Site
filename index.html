@@ -64,6 +64,7 @@
     <!-- AOS Animation -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -124,15 +125,52 @@
         Hi, I am <strong>Shashank Kumar</strong>
       </h1>
       <p class="section__subtitle section__subtitle--intro">Frontend Developer & Blogger</p>
-      <img
-        class="intro__img"
-        src="img/dev-jane-01.jpg"
-        alt="a picture of Jane Smith smiling"
-      />
+      
+    <div class="intro__img">
+      <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_J6o1Hm9w1k.json"  background="transparent"  speed="1.5"  style="width: 300px; height: 300px;"  loop  autoplay></lottie-player>
+    </div>
     </section>
 
-    <!-- My Services -->
-    <section class="my-services" id="services" data-aos="fade-up">
+    <!-- About Me -->
+    <section class="about-me" id="about" data-aos="fade-right">
+      <h2 class="section__title section__title--about">About Me</h2>
+      <p class="section__subtitle section__subtitle--about">
+        Developer and Blogger
+      </p>
+
+      <div class="about-me__body">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat.
+        </p>
+      </div>
+
+      <img
+        class="about-me__img"
+        src="img/dev-jane-02.jpg"
+        alt="Jane leaning against a bus"
+      />
+
+      <div class="resume-btn">
+        <a
+          href="/21BCE1887_Resume.pdf"
+          download="21BCE1887_Resume.pdf"
+          class="btn"
+          >My Resume <i class="uil uil-download-alt"></i
+        ></a>
+      </div>
+    </section>
+
+     <!-- My Services -->
+     <section class="my-services" id="services" data-aos="fade-up">
       <h2 class="section__title section__title--services">What I do</h2>
       <div class="services">
         <div class="service">
@@ -174,44 +212,6 @@
       <!-- / services -->
 
       <a href="#work" class="btn">My Work</a>
-    </section>
-
-    <!-- About Me -->
-    <section class="about-me" id="about" data-aos="fade-right">
-      <h2 class="section__title section__title--about">About Me</h2>
-      <p class="section__subtitle section__subtitle--about">
-        Developer and Blogger
-      </p>
-
-      <div class="about-me__body">
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat.
-        </p>
-      </div>
-
-      <img
-        class="about-me__img"
-        src="img/dev-jane-02.jpg"
-        alt="Jane leaning against a bus"
-      />
-
-      <div class="resume-btn">
-        <a
-          href="/21BCE1887_Resume.pdf"
-          download="21BCE1887_Resume.pdf"
-          class="btn"
-          >My Resume <i class="uil uil-download-alt"></i
-        ></a>
-      </div>
     </section>
 
     <!-- My Skills -->
@@ -355,7 +355,7 @@
     </section>
 
     <!-- Tech stack -->
-    <section class="techs" id="tech" data-aos="slide-right">
+    <section class="techs" id="tech" data-aos="fade-up">
       <h2 class="section__title">Tech Stack</h2>
       <p class="section__subtitle section__subtitle--tech">
         Some of the Languages, Technology and Tools I use
@@ -456,7 +456,7 @@
       <!-- / tech_icons -->
     </section>
 
-    <section class="blogs" id="blog" data-aos="slide-left">
+    <section class="blogs" id="blog" data-aos="fade-up">
       <h2 class="section__title">My Blogs</h2>
       <p class="section__subtitle section__subtitle--blog">
         Some of the Technical and Self Growth Blogs of 2023
@@ -634,7 +634,7 @@
 
     <!-- My Work -->
     <section class="works section" id="work" data-aos="zoom-in">
-      <h2 class="section__title--work">My Work</h2>
+      <h2 class="section__title--work">My Portfolio</h2>
       <p class="section__subtitle section__subtitle--work">
         A Sneek Peek into my Projects
       </p>
@@ -857,6 +857,8 @@
       });
     </script>
 
+    <!-- Lottie Animation -->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <script src="js/mixitup.min.js"></script>
     <script src="js/index.js"></script>
   </body>
