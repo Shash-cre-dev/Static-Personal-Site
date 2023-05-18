@@ -1,5 +1,0 @@
-<img
-        class="intro__img"
-        src="img/dev-jane-01.jpg"
-        alt="a picture of Jane Smith smiling"
-      />
