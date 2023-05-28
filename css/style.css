@@ -147,6 +147,11 @@ h1 { font-size: var(--fs-h1) }
 h2 { font-size: var(--fs-h2) }
 h3 { font-size: var(--fs-h3) }
 
+p{
+    font-size: 1.05rem;
+    line-height: 0.8cm;
+}
+
 .section__title{
     margin-bottom: 0.25em;
 }
