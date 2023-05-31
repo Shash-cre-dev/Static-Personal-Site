@@ -472,6 +472,10 @@ header{
     margin: 0 auto;
 }
 
+.name{
+    font-size: var(--fs-h3);
+}
+
 .about-me__img {
     box-shadow: var(--bs);
 }
